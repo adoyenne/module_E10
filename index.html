@@ -1,96 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мое Резюме</title>
-    <!-- Подключаем шрифт Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <h1>Арсений Карагодин</h1>
-            <p>Postdoctorial researcher</p>
-            <img src="profile_photo.jpeg" alt="Арсений Карагодин" class="profile-img">
+        <div class="header__container container">
+            <h1 class="header__title">Арсений Карагодин</h1>
+            <p class="header__subtitle">Postdoctorial researcher</p>
+            <img src="profile_photo.jpeg" alt="Арсений Карагодин" class="header__profile-img">
         </div>
     </header>
 
-    <section id="about" class="about container">
-    <h2>О себе</h2>
-    <p>
-        Я — мотивированный и трудолюбивый исследователь с более чем 6-летним опытом работы в области глобального климатического моделирования, в настоящее время работаю в VU Amsterdam. С юных лет я стремился к исследованию сложных экологических проблем. Я принимал участие в передовых проектах, связанных с эволюцией озонового слоя и климатическими изменениями.
-    </p>
-    <p>
-        Моя карьера научного сотрудника позволила мне развить в себе широкий спектр навыков: от разработки глобальных климатических моделей на Fortran и Shell до обработки и визуализации долгосрочных атмосферных данных с использованием Unix, CDO, Matlab и Python. Я научился проводить качественную научную работу, имею целый ряд публикаций результатов в продвинутых, рецензируемых изданиях, а также рецензировал научные работы коллег по цеху.
-    </p>
-    <p>
-        Помимо научной деятельности, в данный момент я активно развиваюсь в области веб-разработки, обучаясь в качестве full-stack разработчика на Python. Изучая backend, я овладел такими фреймворками, как Django и Flask, и приобрел значительные навыки в frontend-разработке с использованием HTML, CSS, JavaScript и React. В ходе обучения я также учавствую в школе тимлидов и уже успел применить свои знания на практике, выступая в качестве тимлида в разработке веб-приложения для стартапа в рамках мегахакатона Skillfactory.
-    </p>
-    <p>
-        Я открыт для новых вызовов и всегда готов погрузиться в интересные проекты, будь то научные исследования или веб-разработка. Моя цель — использовать свои уникальные навыки и опыт для решения сложных задач, которые принесут пользу обществу. Открыт к интересным предложениям о работе и сотрудничестве :)
-    </p>
-</section>
+    <section id="about" class="about">
+        <div class="about__container container">
+            <h2 class="about__title">О себе</h2>
+            <p class="about__text">
+                Я — мотивированный и трудолюбивый исследователь с более чем 6-летним опытом работы в области глобального климатического моделирования, в настоящее время работаю в VU Amsterdam. С юных лет я стремился к исследованию сложных экологических проблем. Я принимал участие в передовых проектах, связанных с эволюцией озонового слоя и климатическими изменениями.
+            </p>
+            <p class="about__text">
+                Моя карьера научного сотрудника позволила мне развить в себе широкий спектр навыков: от разработки глобальных климатических моделей на Fortran и Shell до обработки и визуализации долгосрочных атмосферных данных с использованием Unix, CDO, Matlab и Python. Я научился проводить качественную научную работу, имею целый ряд публикаций результатов в продвинутых, рецензируемых изданиях, а также рецензировал научные работы коллег по цеху.
+            </p>
+            <p class="about__text">
+                Помимо научной деятельности, в данный момент я активно развиваюсь в области веб-разработки, обучаясь в качестве full-stack разработчика на Python. Изучая backend, я овладел такими фреймворками, как Django и Flask, и приобрел значительные навыки в frontend-разработке с использованием HTML, CSS, JavaScript и React. В ходе обучения я также учавствую в школе тимлидов и уже успел применить свои знания на практике, выступая в качестве тимлида в разработке веб-приложения для стартапа в рамках мегахакатона Skillfactory.
+            </p>
+            <p class="about__text">
+                Я открыт для новых вызовов и всегда готов погрузиться в интересные проекты, будь то научные исследования или веб-разработка. Моя цель — использовать свои уникальные навыки и опыт для решения сложных задач, которые принесут пользу обществу. Открыт к интересным предложениям о работе и сотрудничестве :)
+            </p>
+        </div>
+    </section>
 
-    <section id="experience" class="experience container">
-        <h2>Опыт работы</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Doctoral researcher</h3>
-                <p>Апрель 2019 — декабрь 2022 </p>
-                <p>PhD студент в ETH Zurich and PMOD/WRC. Изучение эволюции озонового слоя в прошлом и будущем</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Postdoctorial researcher</h3>
-                <p>Январь 2023 — Настоящее время</p>
-                <p>Independent evaluation of GHG emission inventories in the Netherlands using high resolution modeling with DALES </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Project teamlead</h3>
-                <p>Июнь 2024</p>
-                <p>Участие в мегахакатоне от Skillfactory: разработка веб-приложения для стартапа ISTOK </p>
+    <section id="experience" class="experience">
+        <div class="experience__container container">
+            <h2 class="experience__title">Опыт работы</h2>
+            <div class="experience__timeline timeline">
+                <div class="timeline__item">
+                    <h3 class="timeline__title">Doctoral researcher</h3>
+                    <p class="timeline__date">Апрель 2019 — декабрь 2022</p>
+                    <p class="timeline__description"> PhD студент в ETH Zurich and PMOD/WRC. Изучение эволюции озонового слоя в прошлом и будущем </p>
+                </div>
+                <div class="timeline__item">
+                    <h3 class="timeline__title">Postdoctorial researcher</h3>
+                    <p class="timeline__date">Январь 2023 — Настоящее время</p>
+                    <p class="timeline__description">Independent evaluation of GHG emission inventories in the Netherlands using high resolution modeling with DALES</p>
+                </div>
+                <div class="timeline__item">
+                    <h3 class="timeline__title">Project teamlead</h3>
+                    <p class="timeline__date">Июнь 2024</p>
+                    <p class="timeline__description">Участие в мегахакатоне от Skillfactory: разработка веб-приложения для стартапа ISTOK</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills container">
-        <h2>Навыки</h2>
-        <div class="skillbar">
-            <div class="skill" style="width: 90%;">Python</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 90%;">Fortran</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 90%;">Shellscripting</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 90%;">HTML</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 85%;">CSS</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 80%;">JavaScript</div>
-        </div>
-        <div class="skillbar">
-            <div class="skill" style="width: 80%;">Django</div>
+    <section id="skills" class="skills">
+        <div class="skills__container container">
+            <h2 class="skills__title">Навыки</h2>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 90%;">Python</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 90%;">Fortran</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 90%;">Shellscripting</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 90%;">HTML</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 85%;">CSS</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 80%;">JavaScript</div>
+            </div>
+            <div class="skills__skillbar skillbar">
+                <div class="skillbar__skill" style="width: 80%;">Django</div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact container">
-        <h2>Контакты</h2>
-        <div class="contact-links">
-            <a href="a.doyennel@vu.nl">Email</a>
-            <a href="https://www.researchgate.net/profile/Arseniy-Karagodin">ResearchGate</a>
-            <a href="https://github.com/adoyenne">GitHub</a>
+    <section id="contact" class="contact">
+        <div class="contact__container container">
+            <h2 class="contact__title">Контакты</h2>
+            <div class="contact__links contact-links">
+                <a href="mailto:a.doyennel@vu.nl" class="contact-links__link">Email</a>
+                <a href="https://www.researchgate.net/profile/Arseniy-Karagodin" class="contact-links__link">ResearchGate</a>
+                <a href="https://github.com/adoyenne" class="contact-links__link">GitHub</a>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2024 Арсений Карагодин. Все права защищены.</p>
+        <div class="footer__container container">
+            <p class="footer__text">&copy; 2024 Арсений Карагодин. Все права защищены.</p>
+        </div>
     </footer>
 </body>
 </html>

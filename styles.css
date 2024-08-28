@@ -1,4 +1,4 @@
-
+/* Базовые стили */
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +10,14 @@ body {
     line-height: 1.6;
 }
 
+/* Контейнер */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.about p {
-    text-align: justify;
-}
-
+/* Стили для Header */
 .header {
     position: relative;
     background: linear-gradient(to right, #1950d2, #1976d2);
@@ -30,13 +28,20 @@ body {
     overflow: hidden;
 }
 
-
-
-.header:hover::before {
-    transform: translateX(-50%) rotate(90deg);
+.header__title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
 }
 
-.profile-img {
+.header__subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.header__profile-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -45,29 +50,19 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1.5px;
+/* Стили для About */
+.about__text {
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
-.header p {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.about, .experience, .skills, .contact {
-    padding: 2rem 0;
-}
-
-.timeline {
+/* Стили для Experience */
+.experience__timeline {
     display: grid;
     gap: 1rem;
 }
 
-.timeline-item {
+.timeline__item {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
@@ -77,11 +72,21 @@ body {
     transition: all 0.6s ease;
 }
 
-.timeline-item:hover {
+.timeline__item:hover {
     background: #ddd;
     transform: translateY(-3px);
 }
 
+.timeline__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline__date, .timeline__description {
+    font-size: 1rem;
+}
+
+/* Стили для Skills */
 .skillbar {
     background: #e0e0e0;
     border-radius: 5px;
@@ -89,7 +94,7 @@ body {
     overflow: hidden;
 }
 
-.skill {
+.skillbar__skill {
     background: #2196f3;
     height: 20px;
     line-height: 20px;
@@ -99,31 +104,32 @@ body {
     animation: fillSkill 2s ease-out forwards;
 }
 
-/* Контакты */
+/* Стили для Contacts */
 .contact-links {
     display: flex;
     justify-content: space-around;
 }
 
-.contact-links a {
+.contact-links__link {
     display: inline-block;
     color: #2196f3;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.contact-links a:hover {
-    color: #1976d2; /* Более темный синий при наведении */
+.contact-links__link:hover {
+    color: #1976d2;
 }
 
-.footer {
+/* Стили для Footer */
+.footer__text {
     background: #1976d2;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
 }
 
-
+/* Анимации и медиазапросы */
 @keyframes fillSkill {
     from {
         width: 0;
@@ -133,13 +139,13 @@ body {
     }
 }
 
-.timeline-item {
+.timeline__item {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.6s ease;
 }
 
-.timeline-item:hover {
+.timeline__item:hover {
     opacity: 1;
     transform: translateY(0);
 }
@@ -148,25 +154,25 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/* Медиазапросы */
 @media (max-width: 768px) {
-    .timeline {
+    .experience__timeline {
         grid-template-columns: 1fr;
     }
 
-    .profile-img {
+    .header__profile-img {
         width: 120px;
         height: 120px;
     }
 }
 
 @media (max-width: 480px) {
-    .profile-img {
+    .header__profile-img {
         width: 100px;
         height: 100px;
     }
 
-    .skill {
+    .skillbar__skill {
         font-size: 0.8rem;
     }
 
@@ -174,7 +180,7 @@ html {
         flex-direction: column;
     }
 
-    .contact-links a {
+    .contact-links__link {
         margin-bottom: 1rem;
     }
 }
